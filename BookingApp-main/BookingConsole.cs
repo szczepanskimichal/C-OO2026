@@ -46,9 +46,7 @@ public static class BookingConsole
         Console.WriteLine("  " + new string('─', 72));
 
         foreach (var b in bookings)
-        {
-            // Skriv ut bookingen her
-        }
+            Console.WriteLine($"  {b.Id,-5} {b.CustomerName,-20} {b.Room,-8} {b.Date,-12} {b.Start,-7} {b.End,-7} {b.Description}");
         Console.WriteLine();
     }
 
